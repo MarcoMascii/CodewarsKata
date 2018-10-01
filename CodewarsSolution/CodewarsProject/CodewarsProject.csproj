@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Katas\AlphabeticAnagrams.cs" />
     <Compile Include="Katas\Bagels.cs" />
     <Compile Include="Katas\MillionthFibonacci.cs" />
     <Compile Include="Katas\SumOfDivided.cs" />
