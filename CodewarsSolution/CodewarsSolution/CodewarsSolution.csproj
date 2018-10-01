@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{64132F1B-BB0F-4A2A-AFDB-ADA1BF3AE822}</ProjectGuid>
+    <ProjectGuid>{EA81D250-2188-46DB-8147-1EE68579327B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CodewarsProject</RootNamespace>
-    <AssemblyName>CodewarsProject</AssemblyName>
+    <RootNamespace>CodewarsSolution</RootNamespace>
+    <AssemblyName>CodewarsSolution</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
@@ -106,9 +106,10 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Katas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\CodewarsProject.rd.xml" />
+    <Compile Include="Sudoku.cs" />
+    <EmbeddedResource Include="Properties\CodewarsSolution.rd.xml" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
