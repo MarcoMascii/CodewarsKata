@@ -49,10 +49,10 @@ namespace CodewarsSolution
                 }
             }
 
-            int validSubSquare = 0;
-            for (int i = 0; i < boxLenght / 3; i++)
+            int validSubSquare = 1;
+            for (int i = 0; i < Math.Sqrt( boxLenght); i++)
             {
-                for (int j = 0; j < boxLenght / 3; j++)
+                for (int j = 0; j < Math.Sqrt(boxLenght); j++)
                 {
                     validSubSquare *= sudokuData[j][i];
                 }

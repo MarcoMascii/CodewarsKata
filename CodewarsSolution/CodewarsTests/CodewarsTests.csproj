@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Tests\BagelTest.cs" />
     <Compile Include="Tests\AlphabeticAnagramsTest.cs" />
+    <Compile Include="Tests\ExpandingDependencyChainsTest.cs" />
     <Compile Include="Tests\HumanReadableDurationFormatTest.cs" />
     <Compile Include="Tests\MillionthFibonacciTest.cs" />
     <Compile Include="Tests\SudokuTest.cs" />

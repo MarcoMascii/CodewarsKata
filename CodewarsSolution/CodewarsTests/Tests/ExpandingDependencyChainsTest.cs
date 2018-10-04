@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CodewarsTests
 {
-    [TestClass]
+    //[TestClass]
     public class ExpandingDependencyChainsTest
     {
         [TestMethod]
