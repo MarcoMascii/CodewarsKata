@@ -48,6 +48,21 @@ namespace CodewarsSolution
                     return;
                 }
             }
+
+            int validSubSquare = 0;
+            for (int i = 0; i < boxLenght / 3; i++)
+            {
+                for (int j = 0; j < boxLenght / 3; j++)
+                {
+                    validSubSquare *= sudokuData[j][i];
+                }
+            }
+            if (validSubSquare != factorial)
+            {
+                _isValid = false;
+                return;
+            }
+
         }
 
         public bool IsValid()
