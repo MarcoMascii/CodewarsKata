@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodewarsProject
 {
@@ -11,30 +8,39 @@ namespace CodewarsProject
         public static Dictionary<string, string[]> ExpandDependencies(Dictionary<string, string[]> dependencies)
         {
             Dictionary<string, string[]> result = new Dictionary<string, string[]>();
-            List<string> singleDep = new List<string>();
-            List<string> outDep = new List<string>();
 
-            foreach (KeyValuePair<string, string[]> file in dependencies)
+            foreach (var item in dependencies)
             {
-                singleDep = file.Value.ToList();
-                outDep = singleDep;
-                KeyValuePair<string, string[]> test = file;
-
-                while (singleDep.Count > 0)
-                {
-                    foreach (string dep in dependencies[singleDep[0]])
-                    {
-                        if (!singleDep.Contains(dep))
-                        {
-                            singleDep.Add(dep);
-                        }
-                    }
-
-                    
-                }
+                result.Add(item.Key, AddDependencies(item.Value, dependencies));
             }
 
+            foreach (var item in result)
+            {
+                if (item.Value.Contains(item.Key))
+                {
+                    throw new System.InvalidOperationException();
+                }
+            }
             return result;
+        }
+
+        private static string[] AddDependencies(string[] dependenciesIHave, Dictionary<string, string[]> dependencies)
+        {
+            List<string> temp = dependenciesIHave.ToList();
+
+            for (int i = 0; i < dependenciesIHave.Count(); i++)
+            {
+                temp.AddRange(dependencies[dependenciesIHave[i]]);
+            }
+
+            temp = temp.Distinct().ToList();
+
+            if (temp.Any(x=> !dependenciesIHave.Contains(x)))
+            {
+                dependenciesIHave = AddDependencies(temp.ToArray(), dependencies);
+            }
+
+            return dependenciesIHave;
         }
     }
 }

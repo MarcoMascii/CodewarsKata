@@ -3,12 +3,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodewarsTests
 {
-    //[TestClass]
+    [TestClass]
     public class ExpandingDependencyChainsTest
     {
         [TestMethod]
@@ -31,7 +29,38 @@ namespace CodewarsTests
             var actualFiles = ExpandingDependencyChains.ExpandDependencies(startFiles);
 
             // Assert
-            Assert.AreEqual(correctFiles, actualFiles, "Different output");
+            Assert.IsTrue(CheckDictionary(correctFiles, actualFiles), "Different output");
+        }
+
+        [TestMethod]
+        public void BiggerChainText()
+        {
+            // Arrange
+            var startFiles = new Dictionary<string, string[]>();
+            startFiles["A"] = new string[] { "B", "C" };
+            startFiles["B"] = new string[] { "C", "E" };
+            startFiles["C"] = new string[] { "G" };
+            startFiles["D"] = new string[] { "A", "F" };
+            startFiles["E"] = new string[] { "F" };
+            startFiles["F"] = new string[] { "H" };
+            startFiles["G"] = new string[] { };
+            startFiles["H"] = new string[] { };
+
+            var correctFiles = new Dictionary<string, string[]>();
+            correctFiles["A"] = new string[] { "B", "C", "E", "F", "G", "H" };
+            correctFiles["B"] = new string[] { "C", "E", "F", "G", "H" };
+            correctFiles["C"] = new string[] { "G" };
+            correctFiles["D"] = new string[] { "A", "B", "C", "E", "F", "G", "H" };
+            correctFiles["E"] = new string[] { "F", "H" };
+            correctFiles["F"] = new string[] { "H" };
+            correctFiles["G"] = new string[] { };
+            correctFiles["H"] = new string[] { };
+
+            // Act
+            var actualFiles = ExpandingDependencyChains.ExpandDependencies(startFiles);
+
+            // Assert
+            Assert.IsTrue(CheckDictionary(correctFiles, actualFiles), "Different output");
         }
 
         [TestMethod]
@@ -45,10 +74,11 @@ namespace CodewarsTests
             var actualFiles = ExpandingDependencyChains.ExpandDependencies(startFiles);
 
             // Assert
-            Assert.AreEqual(correctFiles, actualFiles, "errors in considering empty lists");
+            Assert.IsTrue(CheckDictionary(correctFiles, actualFiles), "errors in considering empty lists");
         }
 
         [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException), "A circular dependency should have thrown an InvalidOperationException.")]
         public void TestCircularDependencies()
         {
             // Arrange
@@ -57,9 +87,42 @@ namespace CodewarsTests
             startFiles["B"] = new string[] { "C" };
             startFiles["C"] = new string[] { "D" };
             startFiles["D"] = new string[] { "A" };
+            ExpandingDependencyChains.ExpandDependencies(startFiles);            
+        }
 
-            // Act/Assert
-            Assert.AreEqual(typeof(InvalidOperationException), ExpandingDependencyChains.ExpandDependencies(startFiles), "A circular dependency should have thrown an InvalidOperationException.");
+        private bool CheckDictionary(Dictionary<string, string[]> input1, Dictionary<string, string[]> input2)
+        {
+            foreach (var item in input1)
+            {
+                if (!input2.ContainsKey(item.Key))
+                {
+                    return false;
+                }
+                foreach (string element in item.Value)
+                {
+                    if (!input2[item.Key].Contains(element))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            foreach (var item in input2)
+            {
+                if (!input1.ContainsKey(item.Key))
+                {
+                    return false;
+                }
+                foreach (string element in item.Value)
+                {
+                    if (!input1[item.Key].Contains(element))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
     }
 }

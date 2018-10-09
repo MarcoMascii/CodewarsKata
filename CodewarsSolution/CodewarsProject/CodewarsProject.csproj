@@ -48,6 +48,7 @@
     <Compile Include="Katas\Bagels.cs" />
     <Compile Include="Katas\ExpandingDependencyChains.cs" />
     <Compile Include="Katas\MillionthFibonacci.cs" />
+    <Compile Include="Katas\LinearSystem.cs" />
     <Compile Include="Katas\SumOfDivided.cs" />
     <Compile Include="Katas\UmanReadableDurationFormat.cs" />
     <Compile Include="Program.cs" />

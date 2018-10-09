@@ -54,6 +54,7 @@
     <Compile Include="Tests\AlphabeticAnagramsTest.cs" />
     <Compile Include="Tests\ExpandingDependencyChainsTest.cs" />
     <Compile Include="Tests\HumanReadableDurationFormatTest.cs" />
+    <Compile Include="Tests\LinearSystemTest.cs" />
     <Compile Include="Tests\MillionthFibonacciTest.cs" />
     <Compile Include="Tests\SudokuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
