@@ -11,7 +11,7 @@ namespace CodewarsTests
         {
             LinearSystem ls = new LinearSystem();
             string input = "1 2 0 7\r\n0 2 4 8\r\n0 5 6 9";
-            string result = ls.Solve(input);
+            //string result = ls.Solve(input);
             //should be SOLUTION=(10; -1,5; 2,75)
             //string testResult = Tests.testIt(input, result);
             //if (testResult.Length > 0) Assert.Fail(testResult); else Console.WriteLine("'" + result + "' accepted!");

@@ -47,6 +47,7 @@
     <Compile Include="Katas\AlphabeticAnagrams.cs" />
     <Compile Include="Katas\Bagels.cs" />
     <Compile Include="Katas\ExpandingDependencyChains.cs" />
+    <Compile Include="Katas\IntegerPartitions.cs" />
     <Compile Include="Katas\MillionthFibonacci.cs" />
     <Compile Include="Katas\LinearSystem.cs" />
     <Compile Include="Katas\NextBiggerNumbers.cs" />
