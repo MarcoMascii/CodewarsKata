@@ -56,6 +56,7 @@
     <Compile Include="Tests\HumanReadableDurationFormatTest.cs" />
     <Compile Include="Tests\LinearSystemTest.cs" />
     <Compile Include="Tests\MillionthFibonacciTest.cs" />
+    <Compile Include="Tests\NextBiggerNumberTest.cs" />
     <Compile Include="Tests\SudokuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\SumByFactorsTest.cs" />
