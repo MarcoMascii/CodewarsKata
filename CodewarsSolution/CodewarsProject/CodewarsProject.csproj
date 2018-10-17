@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
@@ -47,15 +48,19 @@
     <Compile Include="Katas\AlphabeticAnagrams.cs" />
     <Compile Include="Katas\Bagels.cs" />
     <Compile Include="Katas\ExpandingDependencyChains.cs" />
+    <Compile Include="Katas\Faberge.cs" />
+    <Compile Include="Katas\Immortal.cs" />
     <Compile Include="Katas\IntegerPartitions.cs" />
     <Compile Include="Katas\MillionthFibonacci.cs" />
     <Compile Include="Katas\LinearSystem.cs" />
     <Compile Include="Katas\NextBiggerNumbers.cs" />
     <Compile Include="Katas\SumOfDivided.cs" />
+    <Compile Include="Katas\TotalIncreasingOrDecreasingNumbers.cs" />
     <Compile Include="Katas\UmanReadableDurationFormat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Katas\Sudoku.cs" />
+    <Compile Include="Writer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

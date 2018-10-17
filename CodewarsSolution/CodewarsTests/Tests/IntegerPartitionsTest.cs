@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CodewarsTests.Tests
+namespace CodewarsTests
 {
     [TestClass]
     public class IntegerPartitionsTest
