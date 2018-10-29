@@ -58,6 +58,7 @@
     <Compile Include="Tests\ImmortalTest.cs" />
     <Compile Include="Tests\IntegerPartitionsTest.cs" />
     <Compile Include="Tests\LinearSystemTest.cs" />
+    <Compile Include="Tests\MagnetTest.cs" />
     <Compile Include="Tests\MillionthFibonacciTest.cs" />
     <Compile Include="Tests\NextBiggerNumberTest.cs" />
     <Compile Include="Tests\SudokuTest.cs" />

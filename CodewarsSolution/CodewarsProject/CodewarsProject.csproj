@@ -51,6 +51,7 @@
     <Compile Include="Katas\Faberge.cs" />
     <Compile Include="Katas\Immortal.cs" />
     <Compile Include="Katas\IntegerPartitions.cs" />
+    <Compile Include="Katas\Magnets.cs" />
     <Compile Include="Katas\MillionthFibonacci.cs" />
     <Compile Include="Katas\LinearSystem.cs" />
     <Compile Include="Katas\NextBiggerNumbers.cs" />
