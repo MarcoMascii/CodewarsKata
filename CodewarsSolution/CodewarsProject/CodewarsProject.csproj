@@ -55,8 +55,10 @@
     <Compile Include="Katas\MillionthFibonacci.cs" />
     <Compile Include="Katas\LinearSystem.cs" />
     <Compile Include="Katas\NextBiggerNumbers.cs" />
+    <Compile Include="Katas\Skyscrapers.cs" />
     <Compile Include="Katas\SumOfDivided.cs" />
     <Compile Include="Katas\TotalIncreasingOrDecreasingNumbers.cs" />
+    <Compile Include="Katas\TwiceLinear.cs" />
     <Compile Include="Katas\UmanReadableDurationFormat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

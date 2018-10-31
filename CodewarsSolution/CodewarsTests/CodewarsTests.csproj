@@ -61,10 +61,12 @@
     <Compile Include="Tests\MagnetTest.cs" />
     <Compile Include="Tests\MillionthFibonacciTest.cs" />
     <Compile Include="Tests\NextBiggerNumberTest.cs" />
+    <Compile Include="Tests\SkycrapersTest.cs" />
     <Compile Include="Tests\SudokuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\SumByFactorsTest.cs" />
     <Compile Include="Tests\TotalIncreasingOrDecreasingNumbersTest.cs" />
+    <Compile Include="Tests\TwiceLinearTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
