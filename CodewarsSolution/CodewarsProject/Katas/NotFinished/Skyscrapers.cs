@@ -63,10 +63,10 @@ namespace CodewarsProject
             {
                 foreach (char b in col)
                 {
-                    string[] row
+                    //string[] row
                     List<string> temp = new List<string>(Cross(a.ToString(), col).Union(Cross(rows, b.ToString())));
                     temp.Remove(a.ToString() + b.ToString());
-                    union.Add(a.ToString() + b.ToString(), temp.ToArray());
+                    //union.Add(a.ToString() + b.ToString(), temp.ToArray());
                 }
             }
             return union;
@@ -86,7 +86,7 @@ namespace CodewarsProject
             else if (values[chosenCell].Length == 1)
             {
                 int d2 = int.Parse(values[chosenCell]);
-                foreach ()
+                //foreach ()
                 {
 
                 }

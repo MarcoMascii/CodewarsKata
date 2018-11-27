@@ -1,12 +1,8 @@
 ﻿using CodewarsProject;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CodewarsTests
+namespace CodewarsTests.Tests.Completed
 {
     [TestClass]
     public class MagnetTest

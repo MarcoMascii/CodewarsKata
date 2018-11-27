@@ -1,7 +1,7 @@
 ﻿using CodewarsProject;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CodewarsTests
+namespace CodewarsTests.Tests.Incompleted
 {
     [TestClass]
     public class LinearSystemTest

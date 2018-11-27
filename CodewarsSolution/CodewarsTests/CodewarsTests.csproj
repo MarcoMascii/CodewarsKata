@@ -50,23 +50,24 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests\BagelTest.cs" />
-    <Compile Include="Tests\AlphabeticAnagramsTest.cs" />
-    <Compile Include="Tests\ExpandingDependencyChainsTest.cs" />
-    <Compile Include="Tests\FabergeTest.cs" />
-    <Compile Include="Tests\HumanReadableDurationFormatTest.cs" />
-    <Compile Include="Tests\ImmortalTest.cs" />
-    <Compile Include="Tests\IntegerPartitionsTest.cs" />
-    <Compile Include="Tests\LinearSystemTest.cs" />
-    <Compile Include="Tests\MagnetTest.cs" />
-    <Compile Include="Tests\MillionthFibonacciTest.cs" />
-    <Compile Include="Tests\NextBiggerNumberTest.cs" />
-    <Compile Include="Tests\SkycrapersTest.cs" />
-    <Compile Include="Tests\SudokuTest.cs" />
+    <Compile Include="Tests\Completed\BagelTest.cs" />
+    <Compile Include="Tests\Completed\AlphabeticAnagramsTest.cs" />
+    <Compile Include="Tests\Completed\ExpandingDependencyChainsTest.cs" />
+    <Compile Include="Tests\Completed\FabergeTest.cs" />
+    <Compile Include="Tests\Completed\HumanReadableDurationFormatTest.cs" />
+    <Compile Include="Tests\Incompleted\ImmortalTest.cs" />
+    <Compile Include="Tests\Completed\IntegerPartitionsTest.cs" />
+    <Compile Include="Tests\Incompleted\LinearSystemTest.cs" />
+    <Compile Include="Tests\Completed\MagnetTest.cs" />
+    <Compile Include="Tests\Completed\MillionthFibonacciTest.cs" />
+    <Compile Include="Tests\Completed\NextBiggerNumberTest.cs" />
+    <Compile Include="Tests\Incompleted\SkycrapersTest.cs" />
+    <Compile Include="Tests\Completed\SudokuTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\SumByFactorsTest.cs" />
-    <Compile Include="Tests\TotalIncreasingOrDecreasingNumbersTest.cs" />
-    <Compile Include="Tests\TwiceLinearTest.cs" />
+    <Compile Include="Tests\Completed\SumByFactorsTest.cs" />
+    <Compile Include="Tests\Completed\TotalIncreasingOrDecreasingNumbersTest.cs" />
+    <Compile Include="Tests\Completed\TwiceLinearTest.cs" />
+    <Compile Include="Tests\Incompleted\SudokuSolverTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

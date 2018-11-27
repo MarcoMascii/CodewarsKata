@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodewarsTests
+namespace CodewarsTests.Tests.Completed
 {
     [TestClass]
     public class AlphabeticAnagramsTest

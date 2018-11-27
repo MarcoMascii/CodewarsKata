@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Numerics;
 
-namespace CodewarsTests
+namespace CodewarsTests.Tests.Completed
 {
     [TestClass]
     public class TotalIncreasingOrDecreasingNumbersTest

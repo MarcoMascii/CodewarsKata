@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CodewarsTests
+namespace CodewarsTests.Tests.Completed
 {
     [TestClass]
     public class NextBiggerNumberTest
