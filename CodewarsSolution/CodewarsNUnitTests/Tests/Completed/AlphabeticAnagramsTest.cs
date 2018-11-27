@@ -1,43 +1,38 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CodewarsProject;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CodewarsProject;
+using NUnit.Framework;
 
-namespace CodewarsTests
+namespace CodewarsNUnitTests.Tests.Completed
 {
-    [TestClass]
+    [TestFixture]
     public class AlphabeticAnagramsTest
     {
-        [TestMethod]
-        public void test1()
+        [Test]
+        public void Test1()
         {
             TestNumberToOrdinal("A", 1);
         }
-        [TestMethod]
-        public void test2()
+        [Test]
+        public void Test2()
         {
             TestNumberToOrdinal("ABAB", 2);
         }
-        [TestMethod]
-        public void test3()
+        [Test]
+        public void Test3()
         {
             TestNumberToOrdinal("AAAB", 1);
         }
-        [TestMethod]
-        public void test4()
+        [Test]
+        public void Test4()
         {
             TestNumberToOrdinal("BAAA", 4);
         }
-        [TestMethod]
-        public void test5()
+        [Test]
+        public void Test5()
         {
             TestNumberToOrdinal("QUESTION", 24572);
         }
-        [TestMethod]
-        public void test6()
+        [Test]
+        public void Test6()
         {
             TestNumberToOrdinal("BOOKKEEPER", 10743);
         }

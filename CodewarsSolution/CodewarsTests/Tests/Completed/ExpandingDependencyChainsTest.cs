@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CodewarsTests
+namespace CodewarsTests.Tests.Completed
 {
     [TestClass]
     public class ExpandingDependencyChainsTest

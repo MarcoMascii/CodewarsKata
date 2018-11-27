@@ -1,7 +1,7 @@
 ﻿using CodewarsSolution;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CodewarsTests
+namespace CodewarsTests.Tests.Completed
 {
     [TestClass]
     public class SudokuTest

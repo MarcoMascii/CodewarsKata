@@ -1,17 +1,17 @@
 ﻿using CodewarsProject;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using System.Numerics;
 
-namespace CodewarsTests
+namespace CodewarsNUnitTests.Tests.Completed
 {
-    [TestClass]
+    [TestFixture]
     public class TotalIncreasingOrDecreasingNumbersTest
     {
-        private static void Tester(int inp, BigInteger exp)
+        static void Tester(int inp, BigInteger exp)
         {
             Assert.AreEqual(exp, TotalIncreasingOrDecreasingNumbers.TotalIncDec(inp), "Should return the total below 10<sup>" + inp + "</sup>");
         }
-        [TestMethod]
+        [Test]
         public void BasicTests()
         {
             Tester(0, BigInteger.Parse("1"));

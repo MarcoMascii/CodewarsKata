@@ -3,12 +3,12 @@ using System.Linq;
 
 namespace CodewarsProject
 {
-    internal class Combination
+    class Combination
     {
         internal long Num;
         internal IEnumerable<Combination> Combinations;
     }
-    public class IntegerPartitions
+    public static class IntegerPartitions
     {
         public static string Part(long n)
         {
@@ -21,14 +21,14 @@ namespace CodewarsProject
             }
             products = products.Distinct().ToList();
             products.Sort();
-            double median = products.Count() % 2 != 0 ? products[products.Count() / 2 ] : ((double)products[products.Count() / 2] + (double)products[(products.Count() / 2) - 1]) / 2.0;
+            double median = products.Count() % 2 != 0 ? products[products.Count() / 2] : ((double)products[products.Count() / 2] + (double)products[(products.Count() / 2) - 1]) / 2.0;
             string output = string.Format("Range: {0} Average: {1} Median: {2}", products.Max() - products.Min(), products.Average().ToString("0.00"), median.ToString("0.00"));
             return output;
         }
 
         internal static IEnumerable<Combination> GetCombinationTrees(long num, long max)
         {
-            return Enumerable.Range(1,(int)num)
+            return Enumerable.Range(1, (int)num)
                              .Where(n => n <= max)
                              .Select(n =>
                                  new Combination
@@ -41,17 +41,12 @@ namespace CodewarsProject
         internal static IEnumerable<IEnumerable<long>> BuildCombinations(
                                                        IEnumerable<Combination> combinations)
         {
-            if (combinations.Count() == 0)
-            {
-                return new[] { new long[0] };
-            }
-            else
-            {
-                return combinations.SelectMany(c =>
+            return !combinations.Any()
+                ? (new[] { new long[0] })
+                : combinations.SelectMany(c =>
                                       BuildCombinations(c.Combinations)
                                            .Select(l => new[] { c.Num }.Concat(l))
                                     );
-            }
         }
 
         public static IEnumerable<IEnumerable<long>> GetCombinations(long num)
