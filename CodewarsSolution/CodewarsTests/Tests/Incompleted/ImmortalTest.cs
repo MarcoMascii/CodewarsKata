@@ -14,7 +14,8 @@ namespace CodewarsTests.Tests.Incompleted
             //Assert.AreEqual((long)11925, Immortal.ElderAge(25, 31, 0, 100007));
             //Assert.AreEqual((long)4323, Immortal.ElderAge(5, 45, 3, 1000007));
             //Assert.AreEqual((long)1586, Immortal.ElderAge(31, 39, 7, 2345));
-            Assert.AreEqual((long)808451, Immortal.ElderAge(545, 435, 342, 1000007));
+            //Assert.AreEqual((long)808451, Immortal.ElderAge(545, 435, 342, 1000007));
+            Assert.AreEqual((long)808451, Immortal.ElderAge(500, 500, 342, 1000007));
             // You need to run this test very quickly before attempting the actual tests :)
             //Assert.AreEqual((long)5456283, Immortal.ElderAge(28827050410L, 35165045587L, 7109602, 13719506));
         }
