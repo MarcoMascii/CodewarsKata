@@ -50,6 +50,7 @@
     <Compile Include="Katas\Completed\ExpandingDependencyChains.cs" />
     <Compile Include="Katas\Completed\Faberge.cs" />
     <Compile Include="Katas\Completed\ConnectFour.cs" />
+    <Compile Include="Katas\NotFinished\CatchingCarMileageNumbers.cs" />
     <Compile Include="Katas\NotFinished\Immortal.cs" />
     <Compile Include="Katas\Completed\IntegerPartitions.cs" />
     <Compile Include="Katas\Completed\Magnets.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Katas\Completed\LinearSystem.cs" />
     <Compile Include="Katas\Completed\NextBiggerNumbers.cs" />
     <Compile Include="Katas\NotFinished\Skyscrapers.cs" />
+    <Compile Include="Katas\Completed\SortBinaryTreeByLevels.cs" />
     <Compile Include="Katas\NotFinished\SquareIntoSquares.cs" />
     <Compile Include="Katas\NotFinished\SudokuSolver.cs" />
     <Compile Include="Katas\Completed\SumOfDivided.cs" />

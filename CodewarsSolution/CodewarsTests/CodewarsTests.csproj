@@ -56,6 +56,7 @@
     <Compile Include="Tests\Completed\FabergeTest.cs" />
     <Compile Include="Tests\Completed\HumanReadableDurationFormatTest.cs" />
     <Compile Include="Tests\Completed\ConnectFourTest.cs" />
+    <Compile Include="Tests\Incompleted\CatchingCarMileageNumbersTest.cs" />
     <Compile Include="Tests\Incompleted\ImmortalTest.cs" />
     <Compile Include="Tests\Completed\IntegerPartitionsTest.cs" />
     <Compile Include="Tests\Incompleted\LinearSystemTest.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Tests\Completed\TotalIncreasingOrDecreasingNumbersTest.cs" />
     <Compile Include="Tests\Completed\TwiceLinearTest.cs" />
     <Compile Include="Tests\Completed\SquareIntoSqaresTest.cs" />
+    <Compile Include="Tests\Completed\SortBinaryTreeByLevelsTest.cs" />
     <Compile Include="Tests\Incompleted\SudokuSolverTest.cs" />
     <Compile Include="Tests\Incompleted\TTTSolverTest.cs" />
   </ItemGroup>

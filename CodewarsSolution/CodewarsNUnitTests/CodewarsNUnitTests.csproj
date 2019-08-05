@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -51,15 +51,12 @@
     <Compile Include="Tests\NotFinished\LinearSystemTest.cs" />
     <Compile Include="Tests\NotFinished\SkycrapersTest.cs" />
     <Compile Include="Tests\NotFinished\SudokuSolverTest.cs" />
+    <Compile Include="Tests\NotFinished\TestClassAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tests\" />
-    <Folder Include="Tests\Completed\" />
-    <Folder Include="Tests\NotFinished\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CodewarsProject\CodewarsProject.csproj">
       <Project>{861549FB-5142-4785-9B3C-2CB35ACF43FA}</Project>
